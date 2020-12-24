@@ -2,7 +2,6 @@ package com.sist.client;
 import java.awt.*;
 import java.net.URL;
 import javax.swing.*;
-
 import java.util.*;
 public class MangoDetailForm extends JPanel{
 	   JLabel poster=new JLabel();
@@ -17,14 +16,14 @@ public class MangoDetailForm extends JPanel{
 		   poster.setBounds(10, 65, 330, 400);
 		   add(poster);
 		   la1.setBounds(350, 65, 330, 45);
-		   la1.setFont(new Font("±º∏≤√º",Font.BOLD,33));
+		   la1.setFont(new Font("Íµ¥Î¶ºÏ≤¥",Font.BOLD,33));
 		   add(la1);
 		   JPanel p=new JPanel();
 		   p.setLayout(new GridLayout(3,1,5,5));
-		   String[] str={"∞°∞‘∏Ì","∆Ú¡°","¿ßƒ°","»ƒ±‚"}; //7->4∞≥
-		   la2.setFont(new Font("±º∏≤√º",Font.ITALIC,28));
+		   String[] str={"Í∞ÄÍ≤åÎ™Ö","ÌèâÏ†ê","ÏúÑÏπò","ÌõÑÍ∏∞"}; //7->4Í∞ú
+		   la2.setFont(new Font("Íµ¥Î¶ºÏ≤¥",Font.ITALIC,28));
 		   la2.setForeground(Color.pink);
-		   la3.setFont(new Font("±º∏≤√º",Font.PLAIN,15));
+		   la3.setFont(new Font("Íµ¥Î¶ºÏ≤¥",Font.PLAIN,15));
 		   p.add(la2);p.add(la3);
 		   p.setBounds(350, 115, 330, 100);
 		   add(p);
@@ -34,8 +33,8 @@ public class MangoDetailForm extends JPanel{
 		   js.setBounds(350, 220, 330, 150);
 		   add(js);
 		   
-		   b1=new JButton("øπæ‡");
-		   b2=new JButton("∏Ò∑œ");
+		   b1=new JButton("ÏòàÏïΩ");
+		   b2=new JButton("Î™©Î°ù");
 		   b1.setBackground(Color.orange);
 		   b2.setBackground(Color.green);
 		   JPanel p2=new JPanel();
@@ -57,8 +56,8 @@ public class MangoDetailForm extends JPanel{
 					   poster.getWidth(), poster.getHeight());
 			   poster.setIcon(new ImageIcon(img));
 		   }catch(Exception ex) {}
-		   la2.setText("∆Ú¡°:"+vo.getReview());
-		   la3.setText("¿ßƒ°:"+vo.getPlace());
+		   la2.setText("ÌèâÏ†ê:"+vo.getReview());
+		   la3.setText("ÏúÑÏπò:"+vo.getPlace());
 		   ta.setText(vo.getContent());
 		   
 	   }
