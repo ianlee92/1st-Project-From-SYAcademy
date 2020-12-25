@@ -3,7 +3,6 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.*;
-
 import javax.swing.*;
 import javax.swing.table.*;
 import java.net.*;
@@ -17,18 +16,18 @@ public class MangoListForm extends JPanel implements MouseListener{
    public MangoListForm()
    {
 	   setLayout(null);
-	   b1=new JButton("¼­ÃÌÄ«Æä");
-	   b2=new JButton("Á¦ÁÖÄ«Æä");
-	   b3=new JButton("ºù¼ö¸ÀÁý");
-	   b4=new JButton("¾çÆòÄ«Æä");
-	   b5=new JButton("Æ¼¶ó¹Ì¼ö¸ÀÁý");
-	   b6=new JButton("°Ë»ö");
+	   b1=new JButton("ì„œì´Œì¹´íŽ˜");
+	   b2=new JButton("ì œì£¼ì¹´íŽ˜");
+	   b3=new JButton("ë¹™ìˆ˜ë§›ì§‘");
+	   b4=new JButton("ì–‘í‰ì¹´íŽ˜");
+	   b5=new JButton("í‹°ë¼ë¯¸ìˆ˜ë§›ì§‘");
+	   b6=new JButton("ê²€ìƒ‰");
 	   tf=new JTextField(20);
 	   JPanel p=new JPanel();
 	   p.add(b1);p.add(b2);p.add(b3);p.add(b4);p.add(b5);p.add(tf);p.add(b6);
 	   p.setBounds(220, 25, 900, 35);
 	   add(p);
-	   String[] col={"¹øÈ£","¹Ì¸®º¸±â","°¡°Ô¸í","ÆòÁ¡","ÁÖ¼Ò"};
+	   String[] col={"ë²ˆí˜¸","ë¯¸ë¦¬ë³´ê¸°","ê°€ê²Œëª…","í‰ì ","ì£¼ì†Œ"};
 	   Object[][] row=new Object[0][4]; // [0][5]->[0][4]
 	    
 	   model=new DefaultTableModel(row,col) { 
